@@ -1,0 +1,27 @@
+brand:
+  name: [Открывая искусство]
+menu-string: [Collapsed menu text]
+
+nav: # Navbar links
+  - title: [Проблема]
+    url: '[Link]'
+  - title: [Цель]
+    url: '[Link]'
+  - title: [Задачи]
+    url: '[Link]'
+
+copyright: [Copyright notice]
+
+social-buttons: # Footer social buttons
+  - icon: [Font awesome icon code]
+    url: '[Link]'
+  - icon: [Font awesome icon code]
+    url: '[Link]'
+
+quicklinks: # Footer links
+  - title: [Link title]
+    url: '[Link]'
+  - title: [Link title]
+    url: '[Link]'
+
+modal: # Modal strings for l10n
