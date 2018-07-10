@@ -30,7 +30,6 @@
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -91,11 +90,12 @@
     {% assign ws = '' %}
     {%- if page.layout == 'home' -%}
     <!-- Portfolio Modals -->
-    {%- for project in site.projects -%}
-{% assign ws = '' %}
+    {% for artwork_hash in site.data.artworks %}
+    {% assign ws = '' %}
+    {% assign artwork = artwork_hash[1] %}
 
     <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ artwork.title }}" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -108,19 +108,10 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">{{ project.title }}</h2>
-                  <p class="item-intro text-muted">{{ project.description }}</p>
-                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
+                  {% for image in artwork.images  %}
+                    <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ image.file }}" alt="">
+                  {% endfor %}
                   {% assign ws = '' %}
-                  {{- project.content -}}
-                  {% assign ws = '' %}                  <ul class="list-inline">
-                    <li>{{ site.data.default.modal.date-string }}{{ project.date | date: "%B %Y" }}</li>
-                    <li>{{ site.data.default.modal.client-string }}{{ project.client }}</li>
-                    <li>{{ site.data.default.modal.category-string }}{{ project.category }}</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="{{ site.data.default.modal.close-icon }}"></i>
-                    {{ site.data.default.modal.close-string }}</button>
                 </div>
               </div>
             </div>

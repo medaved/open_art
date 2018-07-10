@@ -3,7 +3,6 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    coderay (1.1.2)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     em-websocket (0.5.1)
@@ -28,8 +27,6 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.10.0)
-      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-theme-startbootstrap-agency (0.2.4)
@@ -43,12 +40,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    method_source (0.9.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
-    pry (0.11.3)
-      coderay (~> 1.1.0)
-      method_source (~> 0.9.0)
     public_suffix (3.0.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
@@ -67,9 +60,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8.3)
-  jekyll-feed (~> 0.6)
   jekyll-theme-startbootstrap-agency
-  pry
 
 BUNDLED WITH
    1.16.2

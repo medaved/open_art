@@ -4,11 +4,19 @@ menu-string: [Collapsed menu text]
 
 nav: # Navbar links
   - title: [Проблема]
-    url: '[Link]'
+    url: '#problem'
   - title: [Цель]
-    url: '[Link]'
+    url: '#targets'
   - title: [Задачи]
-    url: '[Link]'
+    url: '#tasks'
+  - title: [Формат мероприятия]
+    url: '#event-format'
+  - title: [План мероприятия]
+    url: '#event-plan'
+  - title: [Авторы]
+    url: '#team'
+  - title: [Портфолио]
+    url: '#portfolio'
 
 copyright: [Copyright notice]
 
