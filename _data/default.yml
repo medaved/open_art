@@ -3,16 +3,8 @@ brand:
 menu-string: [Collapsed menu text]
 
 nav: # Navbar links
-  - title: [Проблема]
-    url: '#problem'
   - title: [Цель]
     url: '#targets'
-  - title: [Задачи]
-    url: '#tasks'
-  - title: [Формат мероприятия]
-    url: '#event-format'
-  - title: [План мероприятия]
-    url: '#event-plan'
   - title: [Авторы]
     url: '#team'
   - title: [Портфолио]

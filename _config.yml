@@ -16,6 +16,5 @@ github_username:  medaved
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-startbootstrap-agency
 
 
