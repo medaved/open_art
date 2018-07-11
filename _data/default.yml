@@ -1,6 +1,6 @@
 brand:
   name: [Открывая искусство]
-menu-string: [Collapsed menu text]
+menu-string: []
 
 nav: # Navbar links
   - title: [Цель]
@@ -10,18 +10,14 @@ nav: # Navbar links
   - title: [Портфолио]
     url: '#portfolio'
 
-copyright: [Copyright notice]
+copyright: ["© 2018 Dmitry. All rights reserved. " ]
+copyright_url: ["https://t.me/medaved"]
+copyright_text: [Telegram ME.]
 
 social-buttons: # Footer social buttons
-  - icon: [Font awesome icon code]
-    url: '[Link]'
-  - icon: [Font awesome icon code]
-    url: '[Link]'
+
 
 quicklinks: # Footer links
-  - title: [Link title]
-    url: '[Link]'
-  - title: [Link title]
-    url: '[Link]'
+
 
 modal: # Modal strings for l10n
