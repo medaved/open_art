@@ -64,7 +64,7 @@ layout: default
             <ul class="timeline">
               {%- for time in site.data.home.tasks.timeline -%}
               {% assign ws = '' %}
-              <li{% cycle '', ' class="timeline-inverted"' %}>
+              <li{% cycle '', ' class="timeline-inverted"' %} >
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="{{ assets_path }}{{ time.image }}" alt="">
                 </div>
@@ -167,7 +167,7 @@ layout: default
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            {% youtube nTdi3nzQxcE %}
+            {%- youtube nTdi3nzQxcE -%}
           </div>
         </div>
       </div>
